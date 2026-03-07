@@ -270,7 +270,165 @@ export default function Home() {
 
         </div>
 
+        {/* Pricing */}
+        <div className="mb-24">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+
+            {/* Solo card */}
+            <div className="relative rounded-2xl border border-white/[0.1] bg-[#1c1c1c] overflow-hidden shadow-[0_8px_40px_rgba(0,0,0,0.6)]">
+              {/* top glow */}
+              <div className="absolute top-0 left-0 right-0 h-32 pointer-events-none" style={{ background: "radial-gradient(ellipse 80% 60% at 50% -10%, rgba(255,255,255,0.07) 0%, transparent 100%)" }} />
+
+              <div className="relative p-7 flex flex-col h-full">
+                {/* header */}
+                <div className="mb-6">
+                  <p className="text-white font-bold text-lg leading-tight">Individual</p>
+                </div>
+
+                {/* price */}
+                <div className="mb-6">
+                  <span className="text-white font-extrabold text-5xl tracking-tight">$7.99</span>
+                  <span className="text-white/30 text-sm ml-2">one-time</span>
+                </div>
+
+                {/* CTA */}
+                <a
+                  href="https://lattix.lemonsqueezy.com/checkout/buy/1ec654b3-4291-4d4f-a9be-da41075f3b99?logo=0"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center w-full py-3.5 rounded-xl bg-white/[0.07] border border-white/[0.1] text-white font-semibold text-sm hover:bg-white/[0.12] transition-all duration-200 mb-6"
+                >
+                  Buy now
+                </a>
+
+                {/* device count */}
+                <div className="flex items-center gap-3 mb-2">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="text-white/40 flex-shrink-0" aria-hidden="true">
+                    <rect x="2" y="3" width="20" height="14" rx="2" />
+                    <line x1="8" y1="21" x2="16" y2="21" />
+                    <line x1="12" y1="17" x2="12" y2="21" />
+                  </svg>
+                  <span className="text-white/70 text-sm"><span className="text-white font-semibold">1 device</span></span>
+                </div>
+
+                {/* divider */}
+                <div className="flex items-center gap-3 my-5">
+                  <div className="flex-1 h-px bg-white/10" />
+                  <span className="text-white/25 text-[10px] font-semibold tracking-widest uppercase">Launch offer</span>
+                  <div className="flex-1 h-px bg-white/10" />
+                </div>
+
+                {/* features */}
+                <ul className="flex flex-col gap-3">
+                  {["Unlimited updates", "Lifetime license", "macOS 14.0+"].map((f) => (
+                    <li key={f} className="flex items-center gap-3">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-white/40 flex-shrink-0" aria-hidden="true">
+                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                        <polyline points="22 4 12 14.01 9 11.01" />
+                      </svg>
+                      <span className="text-white/60 text-sm">{f}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+
+            {/* Pro card */}
+            <div className="relative rounded-2xl border border-white/[0.15] bg-[#1c1c1c] overflow-hidden shadow-[0_8px_40px_rgba(0,0,0,0.6)]">
+              {/* top glow — slightly warmer */}
+              <div className="absolute top-0 left-0 right-0 h-40 pointer-events-none" style={{ background: "radial-gradient(ellipse 80% 70% at 50% -10%, rgba(255,255,255,0.11) 0%, transparent 100%)" }} />
+
+              <div className="relative p-7 flex flex-col h-full">
+                {/* header */}
+                <div className="mb-6">
+                  <p className="text-white font-bold text-lg leading-tight">Pro</p>
+                </div>
+
+                {/* price */}
+                <div className="mb-6">
+                  <span className="text-white font-extrabold text-5xl tracking-tight">$19.99</span>
+                  <span className="text-white/30 text-sm ml-2">one-time</span>
+                </div>
+
+                {/* CTA */}
+                <a
+                  href="https://lattix.lemonsqueezy.com/checkout/buy/a1199062-1b2d-4d78-8488-0f1a1499b12f?logo=0"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center w-full py-3.5 rounded-xl bg-white/90 text-black font-semibold text-sm hover:bg-white transition-all duration-200 mb-6"
+                >
+                  Buy now
+                </a>
+
+                {/* device count */}
+                <div className="flex items-center gap-3 mb-2">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="text-white/40 flex-shrink-0" aria-hidden="true">
+                    <rect x="2" y="3" width="20" height="14" rx="2" />
+                    <line x1="8" y1="21" x2="16" y2="21" />
+                    <line x1="12" y1="17" x2="12" y2="21" />
+                  </svg>
+                  <span className="text-white/70 text-sm"><span className="text-white font-semibold">3 devices</span></span>
+                </div>
+
+                {/* divider */}
+                <div className="flex items-center gap-3 my-5">
+                  <div className="flex-1 h-px bg-white/10" />
+                  <span className="text-white/25 text-[10px] font-semibold tracking-widest uppercase">Launch offer</span>
+                  <div className="flex-1 h-px bg-white/10" />
+                </div>
+
+                {/* features */}
+                <ul className="flex flex-col gap-3">
+                  {["Unlimited updates", "Lifetime license", "macOS 14.0+"].map((f) => (
+                    <li key={f} className="flex items-center gap-3">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-white/40 flex-shrink-0" aria-hidden="true">
+                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                        <polyline points="22 4 12 14.01 9 11.01" />
+                      </svg>
+                      <span className="text-white/60 text-sm">{f}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
         </div>{/* end constrained container */}
+
+        {/* Footer */}
+        <footer className="relative overflow-hidden">
+          {/* Download button */}
+          <div className="flex justify-center pt-16 pb-10 relative z-10">
+            <a
+              href="https://github.com/Abjcodes/Muffle-releases/releases/download/dmg/Muffle.1.0.dmg"
+              download
+              rel="noopener noreferrer"
+              className="inline-flex items-center px-7 py-4 rounded-full bg-white/10 border border-white/20 text-white font-semibold text-base hover:bg-white/15 transition-all duration-200 backdrop-blur-md shadow-[inset_0_1px_0_rgba(255,255,255,0.15),0_4px_24px_rgba(0,0,0,0.3)]"
+            >
+              <svg className="w-4 h-4 mr-2 flex-shrink-0" viewBox="0 0 814 1000" fill="currentColor" aria-hidden="true">
+                <path d="M788.1 340.9c-5.8 4.5-108.2 62.2-108.2 190.5 0 148.4 130.3 200.9 134.2 202.2-.6 3.2-20.7 71.9-68.7 141.9-42.8 61.6-87.5 123.1-155.5 123.1s-85.5-39.5-164-39.5c-76 0-103.7 40.8-165.9 40.8s-105-42.2-150.3-107.4C46.8 790.7 0 663 0 541.8c0-194.3 126.4-297.5 250.8-297.5 66.1 0 121.2 43.4 162.7 43.4 39.5 0 101.1-46 176.3-46 28.5 0 130.9 2.6 198.3 99.2zm-234-181.5c31.1-36.9 53.1-88.1 53.1-139.3 0-7.1-.6-14.3-1.9-20.1-50.6 1.9-110.8 33.7-147.1 75.8-28.5 32.4-55.1 83.6-55.1 135.5 0 7.8 1.3 15.6 1.9 18.1 3.2.6 8.4 1.3 13.6 1.3 45.4 0 102.5-30.4 135.5-71.3z" />
+              </svg>
+              Download for MacOS
+            </a>
+          </div>
+
+          {/* Privacy policy */}
+          <div className="flex justify-center pb-8">
+            <a href="/privacy" className="text-white/20 text-xs hover:text-white/40 transition-colors duration-200">Privacy Policy</a>
+          </div>
+
+          {/* Large wordmark — half-cropped with fade */}
+          <div className="relative overflow-hidden select-none" style={{ height: "0.55em", fontSize: "clamp(5rem, 22vw, 18rem)" }} aria-hidden="true">
+            <p className="text-center font-extrabold leading-none tracking-tight text-white/[0.08]">
+              Muffle
+            </p>
+            {/* fade overlay */}
+            <div className="absolute inset-0" style={{ background: "linear-gradient(to bottom, transparent 0%, #1a1a1a 100%)" }} />
+          </div>
+        </footer>
+
       </div>
     </>
   );
