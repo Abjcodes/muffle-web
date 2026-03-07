@@ -151,6 +151,125 @@ export default function Home() {
           </p>
         </div>
 
+        {/* Bento grid */}
+        <div className="mt-0 mb-24 grid grid-cols-2 gap-3">
+
+          {/* Card 1: Shake to toggle — tall (row-span-2) */}
+          <div className="row-span-2 rounded-2xl border border-white/[0.08] bg-white/[0.03] backdrop-blur-md p-6 flex flex-col justify-between overflow-hidden shadow-[inset_0_1px_0_rgba(255,255,255,0.1),inset_1px_0_0_rgba(255,255,255,0.05),inset_-1px_0_0_rgba(255,255,255,0.03),0_8px_32px_rgba(0,0,0,0.5)]">
+            <div>
+              <div className="w-9 h-9 rounded-xl bg-white/10 flex items-center justify-center mb-5">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                  <path d="M4 4l6.5 18 3-7 7-3z" />
+                </svg>
+              </div>
+              <p className="text-white font-semibold text-base leading-snug mb-1">Shake to toggle</p>
+              <p className="text-white/40 text-sm leading-relaxed">Shake your cursor to instantly blur or unblur everything.</p>
+            </div>
+
+            {/* Visual: overlapping windows */}
+            <div className="mt-8 flex items-center justify-center" aria-hidden="true">
+              <svg width="100%" height="160" viewBox="0 0 200 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <filter id="win-blur" x="-30%" y="-30%" width="160%" height="160%">
+                    <feGaussianBlur stdDeviation="3.5" />
+                  </filter>
+                </defs>
+
+                {/* Background window — blurred & dimmed */}
+                <g filter="url(#win-blur)" opacity="0.45">
+                  <rect x="6" y="10" width="128" height="96" rx="8" fill="white" fillOpacity="0.08" />
+                  <rect x="6" y="10" width="128" height="96" rx="8" stroke="white" strokeOpacity="0.2" strokeWidth="1" />
+                  {/* Title bar */}
+                  <rect x="6" y="10" width="128" height="22" rx="8" fill="white" fillOpacity="0.06" />
+                  <rect x="6" y="28" width="128" height="4" fill="white" fillOpacity="0.04" />
+                  {/* Traffic lights */}
+                  <circle cx="21" cy="21" r="4" fill="white" fillOpacity="0.25" />
+                  <circle cx="33" cy="21" r="4" fill="white" fillOpacity="0.25" />
+                  <circle cx="45" cy="21" r="4" fill="white" fillOpacity="0.25" />
+                  {/* Content lines */}
+                  <rect x="18" y="44" width="80" height="5" rx="2.5" fill="white" fillOpacity="0.3" />
+                  <rect x="18" y="57" width="64" height="5" rx="2.5" fill="white" fillOpacity="0.2" />
+                  <rect x="18" y="70" width="72" height="5" rx="2.5" fill="white" fillOpacity="0.2" />
+                  <rect x="18" y="83" width="48" height="5" rx="2.5" fill="white" fillOpacity="0.15" />
+                </g>
+
+                {/* Foreground window — sharp & clear */}
+                <g>
+                  <rect x="66" y="54" width="128" height="96" rx="8" fill="white" fillOpacity="0.1" />
+                  <rect x="66" y="54" width="128" height="96" rx="8" stroke="white" strokeOpacity="0.35" strokeWidth="1" />
+                  {/* Title bar */}
+                  <rect x="66" y="54" width="128" height="22" rx="8" fill="white" fillOpacity="0.08" />
+                  <rect x="66" y="72" width="128" height="4" fill="white" fillOpacity="0.05" />
+                  {/* Traffic lights */}
+                  <circle cx="81" cy="65" r="4" fill="white" fillOpacity="0.5" />
+                  <circle cx="93" cy="65" r="4" fill="white" fillOpacity="0.5" />
+                  <circle cx="105" cy="65" r="4" fill="white" fillOpacity="0.5" />
+                  {/* Content lines */}
+                  <rect x="78" y="88" width="88" height="5" rx="2.5" fill="white" fillOpacity="0.5" />
+                  <rect x="78" y="101" width="68" height="5" rx="2.5" fill="white" fillOpacity="0.35" />
+                  <rect x="78" y="114" width="76" height="5" rx="2.5" fill="white" fillOpacity="0.35" />
+                  <rect x="78" y="127" width="52" height="5" rx="2.5" fill="white" fillOpacity="0.25" />
+                </g>
+              </svg>
+            </div>
+          </div>
+
+          {/* Card 2: Blur & dim controls */}
+          <div className="rounded-2xl border border-white/[0.08] bg-white/[0.03] backdrop-blur-md p-6 flex flex-col justify-between shadow-[inset_0_1px_0_rgba(255,255,255,0.1),inset_1px_0_0_rgba(255,255,255,0.05),inset_-1px_0_0_rgba(255,255,255,0.03),0_8px_32px_rgba(0,0,0,0.5)]">
+            <div>
+              <div className="w-9 h-9 rounded-xl bg-white/10 flex items-center justify-center mb-5">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                  <line x1="4" y1="8" x2="20" y2="8" />
+                  <circle cx="9" cy="8" r="2.5" fill="currentColor" stroke="none" className="text-white/60" />
+                  <line x1="4" y1="16" x2="20" y2="16" />
+                  <circle cx="15" cy="16" r="2.5" fill="currentColor" stroke="none" className="text-white/60" />
+                </svg>
+              </div>
+              <p className="text-white font-semibold text-base leading-snug mb-1">Blur &amp; dim controls</p>
+              <p className="text-white/40 text-sm leading-relaxed">Tune blur intensity and window dim to your taste.</p>
+            </div>
+
+            {/* Visual: slider bars */}
+            <div className="mt-6 flex flex-col gap-3">
+              {[
+                { label: "Blur", pct: 68 },
+                { label: "Dim", pct: 45 },
+              ].map(({ label, pct }) => (
+                <div key={label}>
+                  <div className="flex justify-between items-center mb-1">
+                    <span className="text-white/30 text-xs font-mono">{label}</span>
+                    <span className="text-white/20 text-xs font-mono">{pct}%</span>
+                  </div>
+                  <div className="relative h-1 rounded-full bg-white/10">
+                    <div className="absolute inset-y-0 left-0 rounded-full bg-white/40" style={{ width: `${pct}%` }} />
+                    <div className="absolute top-1/2 -translate-y-1/2 -translate-x-1/2 w-3 h-3 rounded-full bg-white/80 border border-white/20 shadow-sm" style={{ left: `${pct}%` }} />
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Card 3: Performance */}
+          <div className="rounded-2xl border border-white/[0.08] bg-white/[0.03] backdrop-blur-md p-6 flex flex-col justify-between shadow-[inset_0_1px_0_rgba(255,255,255,0.1),inset_1px_0_0_rgba(255,255,255,0.05),inset_-1px_0_0_rgba(255,255,255,0.03),0_8px_32px_rgba(0,0,0,0.5)]">
+            <div>
+              <div className="w-9 h-9 rounded-xl bg-white/10 flex items-center justify-center mb-5">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                  <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
+                </svg>
+              </div>
+              <p className="text-white font-semibold text-base leading-snug mb-1">Optimized for performance</p>
+              <p className="text-white/40 text-sm leading-relaxed">Built with native swift. Negligible overhead.</p>
+            </div>
+
+            {/* Visual: stat */}
+            <div className="mt-6">
+              <p className="text-white font-extrabold text-4xl tracking-tight leading-none">~0<span className="text-2xl">%</span></p>
+              <p className="text-white/30 text-xs font-mono mt-1 tracking-wide">CPU at idle</p>
+            </div>
+          </div>
+
+        </div>
+
         </div>{/* end constrained container */}
       </div>
     </>
