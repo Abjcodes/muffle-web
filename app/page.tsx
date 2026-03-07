@@ -152,10 +152,10 @@ export default function Home() {
         </div>
 
         {/* Bento grid */}
-        <div className="mt-0 mb-24 grid grid-cols-2 gap-3">
+        <div className="mt-0 mb-24 grid grid-cols-1 md:grid-cols-2 gap-3">
 
           {/* Card 1: Shake to toggle — tall (row-span-2) */}
-          <div className="row-span-2 rounded-2xl border border-white/[0.08] bg-white/[0.03] backdrop-blur-md p-6 flex flex-col justify-between overflow-hidden shadow-[inset_0_1px_0_rgba(255,255,255,0.1),inset_1px_0_0_rgba(255,255,255,0.05),inset_-1px_0_0_rgba(255,255,255,0.03),0_8px_32px_rgba(0,0,0,0.5)]">
+          <div className="md:row-span-2 rounded-2xl border border-white/[0.08] bg-white/[0.03] backdrop-blur-md p-6 flex flex-col justify-between overflow-hidden shadow-[inset_0_1px_0_rgba(255,255,255,0.1),inset_1px_0_0_rgba(255,255,255,0.05),inset_-1px_0_0_rgba(255,255,255,0.03),0_8px_32px_rgba(0,0,0,0.5)]">
             <div>
               <div className="w-9 h-9 rounded-xl bg-white/10 flex items-center justify-center mb-5">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
