@@ -11,9 +11,9 @@ const jakarta = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Muffle — Focus on what matters",
+  title: "Muffle - Blur everything except the active window", 
   description:
-    "Muffle blurs everything except the active window, so that you can focus. 7 day free trial. Supported from macOS 14.0.",
+    "Muffle blurs everything except the active window, helping you stay focused and distraction-free. 7 day free trial. Supported from macOS 14.0.",
   keywords: ["macos app", "focus", "productivity", "window blur", "distraction free", "muffle"],
   authors: [{ name: "Muffle" }],
   metadataBase: new URL("https://getmuffle.app"),
@@ -23,15 +23,16 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://getmuffle.app",
-    title: "Muffle — Focus on what matters",
+    title: "Muffle — Blur everything except the active window",
     description:
       "Muffle blurs everything except the active window, so that you can focus.",
     siteName: "Muffle",
     images: [{ url: "/og.png", width: 1200, height: 630 }],
   },
+  
   twitter: {
     card: "summary_large_image",
-    title: "Muffle — Focus on what matters",
+    title: "Muffle — Blur everything except the active window",
     description:
       "Muffle blurs everything except the active window, so that you can focus.",
     images: ["/og.png"],

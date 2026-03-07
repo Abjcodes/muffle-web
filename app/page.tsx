@@ -1,4 +1,7 @@
+"use client";
+
 import Image from "next/image";
+import { useState, useRef } from "react";
 
 const jsonLd = {
   "@context": "https://schema.org",
@@ -17,8 +20,38 @@ const jsonLd = {
 };
 
 export default function Home() {
+  const [hovered, setHovered] = useState(false);
+  const interacted = useRef(false);
+
+  const handleEnter = () => { interacted.current = true; setHovered(true); };
+  const handleLeave = () => { setHovered(false); };
+
+  const B = ({ children }: { children: string }) => (
+    <span className={
+      !interacted.current ? "blur-static" :
+      hovered ? "blur-out" : "blur-in"
+    }>
+      {children}
+    </span>
+  );
+
   return (
     <>
+      <style>{`
+        .blur-static { filter: blur(3px); opacity: 0.7; }
+        @keyframes blurOut {
+          0%   { filter: blur(3px); opacity: 0.7; }
+          40%  { opacity: 1; }
+          100% { filter: blur(0px); opacity: 1; }
+        }
+        @keyframes blurIn {
+          0%   { filter: blur(0px); opacity: 1; }
+          60%  { opacity: 0.7; }
+          100% { filter: blur(3px); opacity: 0.7; }
+        }
+        .blur-out { animation: blurOut 0.5s cubic-bezier(0.4, 0, 0.2, 1) forwards; }
+        .blur-in  { animation: blurIn  0.5s cubic-bezier(0.4, 0, 0.2, 1) forwards; }
+      `}</style>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
@@ -96,6 +129,28 @@ export default function Home() {
             }}
           />
         </div>
+
+        {/* Copy section */}
+        <div
+          className="mt-16 mb-24"
+          onMouseEnter={handleEnter}
+          onMouseLeave={handleLeave}
+        >
+          <p className="text-[clamp(1.25rem,3vw,1.75rem)] text-white/80 font-semibold leading-loose">
+            <B>You</B> <B>work</B> <B>best</B> <B>when</B> <B>your</B> <B>mind</B> <B>stays</B> <B>on</B> <B>one</B> <B>thing.</B>
+            <br />
+            <B>But</B> <B>modern</B> <B>desktops</B> <B>constantly</B> <B>compete</B> <B>for</B> your <B>attention.</B>
+            <br />
+            <B>Every</B> <B>distraction</B> <B>pulls</B> <B>you</B> <B>away.</B>
+            <br />
+            Attention is <B>precious.</B>
+            <br />
+            <B>And</B> <B>it&apos;s</B> limited<B>.</B>
+            <br />
+            <B>Muffle</B> <B>gently</B> <B>fades</B> <B>everything</B> <B>except</B> <B>the</B> <B>window</B> <B>you&apos;re</B> <B>working</B> <B>on.</B>
+          </p>
+        </div>
+
         </div>{/* end constrained container */}
       </div>
     </>
