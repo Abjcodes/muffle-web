@@ -51,6 +51,11 @@ export default function Home() {
         }
         .blur-out { animation: blurOut 0.5s cubic-bezier(0.4, 0, 0.2, 1) forwards; }
         .blur-in  { animation: blurIn  0.5s cubic-bezier(0.4, 0, 0.2, 1) forwards; }
+        @keyframes slidePills {
+          0%   { transform: translateX(0); }
+          100% { transform: translateX(-50%); }
+        }
+        .slide-pills { display: flex; width: max-content; animation: slidePills 10s linear infinite; }
       `}</style>
       <script
         type="application/ld+json"
@@ -268,6 +273,24 @@ export default function Home() {
             </div>
           </div>
 
+        </div>
+
+        {/* Use cases */}
+        <div className="mb-16">
+          <p className="text-[clamp(1.25rem,3vw,1.75rem)] text-white/80 font-semibold mb-6">Muffle can help you in different ways</p>
+          <div className="relative overflow-hidden">
+            <div className="flex slide-pills">
+              {[0, 1].map((setIdx) => (
+                <div key={setIdx} className="flex shrink-0" aria-hidden={setIdx === 1 ? true : undefined}>
+                  {["Deep Work & Focus", "ADHD-Friendly Workspace", "Privacy Companion", "Screen Sharing & Presentations", "Reducing Cognitive Load"].map((label, i) => (
+                    <span key={i} className="inline-block px-5 py-2 mr-3 rounded-full border border-white/10 bg-white/5 text-white/60 text-sm font-medium">
+                      {label}
+                    </span>
+                  ))}
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
 
         {/* Pricing */}
