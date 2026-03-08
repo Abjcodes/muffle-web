@@ -168,7 +168,7 @@ export default function Home() {
                 </svg>
               </div>
               <p className="text-white font-semibold text-base leading-snug mb-1">Shake to toggle</p>
-              <p className="text-white/40 text-sm leading-relaxed">Shake your cursor to instantly blur or unblur everything.</p>
+              <p className="text-white/40 text-sm leading-relaxed">Shake your cursor to instantly blur or unblur everything except the active window.</p>
             </div>
 
             {/* Visual: overlapping windows */}
