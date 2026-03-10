@@ -117,21 +117,22 @@ export default function Home() {
         </main>
 
         {/* Video demo */}
-        <div className="relative mt-16">
+        <div
+          className="relative mt-16"
+          style={{
+            WebkitMaskImage: "radial-gradient(ellipse 80% 85% at 50% 50%, black 40%, transparent 100%)",
+            maskImage: "radial-gradient(ellipse 80% 85% at 50% 50%, black 40%, transparent 100%)",
+            borderRadius: "1.5rem",
+            overflow: "hidden",
+          }}
+        >
           <video
             src="/demo.mp4"
             autoPlay
             loop
             muted
             playsInline
-            className="w-full rounded-xl border border-white/10 shadow-2xl shadow-black/60"
-          />
-          {/* Bottom fade */}
-          <div
-            className="absolute bottom-0 left-0 right-0 h-32 pointer-events-none"
-            style={{
-              background: "linear-gradient(to top, #1a1a1a 0%, transparent 100%)",
-            }}
+            className="w-full"
           />
         </div>
 
@@ -279,6 +280,10 @@ export default function Home() {
         <div className="mb-16">
           <p className="text-[clamp(1.25rem,3vw,1.75rem)] text-white/80 font-semibold mb-6">Muffle can help you in different ways</p>
           <div className="relative overflow-hidden">
+            {/* Left blur fade */}
+            <div className="absolute left-0 top-0 bottom-0 w-24 z-10 pointer-events-none" style={{ background: "linear-gradient(to right, #1a1a1a 0%, transparent 100%)" }} />
+            {/* Right blur fade */}
+            <div className="absolute right-0 top-0 bottom-0 w-24 z-10 pointer-events-none" style={{ background: "linear-gradient(to left, #1a1a1a 0%, transparent 100%)" }} />
             <div className="flex slide-pills">
               {[0, 1].map((setIdx) => (
                 <div key={setIdx} className="flex shrink-0" aria-hidden={setIdx === 1 ? true : undefined}>
@@ -289,6 +294,19 @@ export default function Home() {
                   ))}
                 </div>
               ))}
+            </div>
+          </div>
+        </div>
+
+        {/* Testimonial */}
+        <div id="testimonial" className="mb-24 flex justify-center">
+          <div className="max-w-2xl text-center">
+            <p className="text-white/80 text-lg leading-relaxed italic mb-6">
+              "I used to constantly get distracted by notifications and other open windows. This app blurs everything out except what I'm working on, and honestly, it's the simplest but most effective productivity hack I've found."
+            </p>
+            <div>
+              <p className="text-white font-semibold">Shishir Jakati</p>
+              <p className="text-white/50 text-sm">Co-Founder and CTO, Helium</p>
             </div>
           </div>
         </div>
