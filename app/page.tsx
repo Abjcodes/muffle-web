@@ -298,15 +298,24 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Testimonial */}
-        <div id="testimonial" className="mb-24 flex justify-center">
-          <div className="max-w-2xl text-center">
+        {/* Testimonials */}
+        <div id="testimonial" className="mb-16 flex flex-col gap-12 items-center">
+          <div className="w-full text-center">
             <p className="text-white/80 text-lg leading-relaxed italic mb-6">
               "I used to constantly get distracted by notifications and other open windows. This app blurs everything out except what I'm working on, and honestly, it's the simplest but most effective productivity hack I've found."
             </p>
             <div>
               <p className="text-white font-semibold">Shishir Jakati</p>
               <p className="text-white/50 text-sm">Co-Founder and CTO, Helium</p>
+            </div>
+          </div>
+          <div className="w-full text-center">
+            <p className="text-white/80 text-lg leading-relaxed italic mb-6">
+              "It has changed the way I work, from being a super cluttered workspace to as a vibe coder. I can actually think. This tool actually helps me ship faster by removing distractions."
+            </p>
+            <div>
+              <p className="text-white font-semibold">Ethan</p>
+              <p className="text-white/50 text-sm">Software Engineer</p>
             </div>
           </div>
         </div>
