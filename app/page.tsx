@@ -322,26 +322,22 @@ export default function Home() {
 
         {/* Pricing */}
         <div id="pricing" className="mb-24">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div className="flex justify-center">
 
             {/* Solo card */}
-            <div className="relative rounded-2xl border border-white/[0.1] bg-[#1c1c1c] overflow-hidden shadow-[0_8px_40px_rgba(0,0,0,0.6)]">
-              {/* top glow */}
+            {/* <div className="relative rounded-2xl border border-white/[0.1] bg-[#1c1c1c] overflow-hidden shadow-[0_8px_40px_rgba(0,0,0,0.6)]">
               <div className="absolute top-0 left-0 right-0 h-32 pointer-events-none" style={{ background: "radial-gradient(ellipse 80% 60% at 50% -10%, rgba(255,255,255,0.07) 0%, transparent 100%)" }} />
 
               <div className="relative p-7 flex flex-col h-full">
-                {/* header */}
                 <div className="mb-6">
                   <p className="text-white font-bold text-lg leading-tight">Individual</p>
                 </div>
 
-                {/* price */}
                 <div className="mb-6">
                   <span className="text-white font-extrabold text-5xl tracking-tight">$7.99</span>
                   <span className="text-white/30 text-sm ml-2">one-time</span>
                 </div>
 
-                {/* CTA */}
                 <a
                   href="https://lattix.lemonsqueezy.com/checkout/buy/1ec654b3-4291-4d4f-a9be-da41075f3b99?logo=0"
                   target="_blank"
@@ -351,7 +347,6 @@ export default function Home() {
                   Buy now
                 </a>
 
-                {/* device count */}
                 <div className="flex items-center gap-3 mb-2">
                   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="text-white/40 flex-shrink-0" aria-hidden="true">
                     <rect x="2" y="3" width="20" height="14" rx="2" />
@@ -361,14 +356,12 @@ export default function Home() {
                   <span className="text-white/70 text-sm"><span className="text-white font-semibold">1 device</span></span>
                 </div>
 
-                {/* divider */}
                 <div className="flex items-center gap-3 my-5">
                   <div className="flex-1 h-px bg-white/10" />
                   <span className="text-white/25 text-[10px] font-semibold tracking-widest uppercase">Launch offer</span>
                   <div className="flex-1 h-px bg-white/10" />
                 </div>
 
-                {/* features */}
                 <ul className="flex flex-col gap-3">
                   {["Unlimited updates", "Lifetime license", "macOS 14.0+"].map((f) => (
                     <li key={f} className="flex items-center gap-3">
@@ -381,10 +374,10 @@ export default function Home() {
                   ))}
                 </ul>
               </div>
-            </div>
+            </div> */}
 
             {/* Pro card */}
-            <div className="relative rounded-2xl border border-white/[0.15] bg-[#1c1c1c] overflow-hidden shadow-[0_8px_40px_rgba(0,0,0,0.6)]">
+            <div className="relative rounded-2xl border border-white/[0.15] bg-[#1c1c1c] overflow-hidden shadow-[0_8px_40px_rgba(0,0,0,0.6)] w-full">
               {/* top glow — slightly warmer */}
               <div className="absolute top-0 left-0 right-0 h-40 pointer-events-none" style={{ background: "radial-gradient(ellipse 80% 70% at 50% -10%, rgba(255,255,255,0.11) 0%, transparent 100%)" }} />
 
@@ -396,13 +389,14 @@ export default function Home() {
 
                 {/* price */}
                 <div className="mb-6">
-                  <span className="text-white font-extrabold text-5xl tracking-tight">$19.99</span>
-                  <span className="text-white/30 text-sm ml-2">one-time</span>
+                  <span className="text-white font-extrabold text-5xl tracking-tight">$7.99</span>
+                  <span className="text-white/50 text-2xl ml-3 line-through">$9.99</span>
+                  <span className="text-white/30 text-sm ml-1">one-time</span>
                 </div>
 
                 {/* CTA */}
                 <a
-                  href="https://lattix.lemonsqueezy.com/checkout/buy/a1199062-1b2d-4d78-8488-0f1a1499b12f?logo=0"
+                  href="https://lattix.lemonsqueezy.com/checkout/buy/198fa97a-1d48-43d0-9ed4-1c2f40013431?logo=0"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center justify-center w-full py-3.5 rounded-xl bg-white/90 text-black font-semibold text-sm hover:bg-white transition-all duration-200 mb-6"
@@ -417,7 +411,7 @@ export default function Home() {
                     <line x1="8" y1="21" x2="16" y2="21" />
                     <line x1="12" y1="17" x2="12" y2="21" />
                   </svg>
-                  <span className="text-white/70 text-sm"><span className="text-white font-semibold">3 devices</span></span>
+                  <span className="text-white/70 text-sm"><span className="text-white font-semibold">2 devices</span></span>
                 </div>
 
                 {/* divider */}
