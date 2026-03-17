@@ -100,7 +100,7 @@ export default function Home() {
           {/* CTA row */}
           <div className="flex flex-wrap items-center gap-5">
             <a
-              href="https://github.com/Abjcodes/Muffle-releases/releases/download/prod/Muffle1.0.dmg"
+              href="https://github.com/Abjcodes/Muffle-releases/releases/download/prod/Muffle1.1.dmg"
               download
               rel="noopener noreferrer"
               className="inline-flex items-center px-7 py-4 rounded-full bg-white/10 border border-white/20 text-white font-semibold text-base hover:bg-white/15 transition-all duration-200 backdrop-blur-md shadow-[inset_0_1px_0_rgba(255,255,255,0.15),0_4px_24px_rgba(0,0,0,0.3)]"
@@ -446,7 +446,7 @@ export default function Home() {
           {/* Download button */}
           <div className="flex justify-center pt-16 pb-10 relative z-10">
             <a
-              href="https://github.com/Abjcodes/Muffle-releases/releases/download/prod/Muffle1.0.dmg"
+              href="https://github.com/Abjcodes/Muffle-releases/releases/download/prod/Muffle1.1.dmg"
               download
               rel="noopener noreferrer"
               className="inline-flex items-center px-7 py-4 rounded-full bg-white/10 border border-white/20 text-white font-semibold text-base hover:bg-white/15 transition-all duration-200 backdrop-blur-md shadow-[inset_0_1px_0_rgba(255,255,255,0.15),0_4px_24px_rgba(0,0,0,0.3)]"
