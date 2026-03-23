@@ -98,12 +98,12 @@ export default function Home() {
           </p>
 
           {/* CTA row */}
-          <div className="flex flex-wrap items-center gap-5">
+          <div className="flex flex-col sm:flex-row sm:flex-wrap sm:items-center gap-5">
             <a
               href="https://github.com/Abjcodes/Muffle-releases/releases/download/prod/Muffle1.1.dmg"
               download
               rel="noopener noreferrer"
-              className="inline-flex items-center px-7 py-4 rounded-full bg-white/10 border border-white/20 text-white font-semibold text-base hover:bg-white/15 transition-all duration-200 backdrop-blur-md shadow-[inset_0_1px_0_rgba(255,255,255,0.15),0_4px_24px_rgba(0,0,0,0.3)]"
+              className="inline-flex items-center justify-center w-full sm:w-auto px-7 py-4 rounded-full bg-white/10 border border-white/20 text-white font-semibold text-base hover:bg-white/15 transition-all duration-200 backdrop-blur-md shadow-[inset_0_1px_0_rgba(255,255,255,0.15),0_4px_24px_rgba(0,0,0,0.3)]"
             >
               <svg className="w-4 h-4 mr-2 flex-shrink-0" viewBox="0 0 814 1000" fill="currentColor" aria-hidden="true">
                 <path d="M788.1 340.9c-5.8 4.5-108.2 62.2-108.2 190.5 0 148.4 130.3 200.9 134.2 202.2-.6 3.2-20.7 71.9-68.7 141.9-42.8 61.6-87.5 123.1-155.5 123.1s-85.5-39.5-164-39.5c-76 0-103.7 40.8-165.9 40.8s-105-42.2-150.3-107.4C46.8 790.7 0 663 0 541.8c0-194.3 126.4-297.5 250.8-297.5 66.1 0 121.2 43.4 162.7 43.4 39.5 0 101.1-46 176.3-46 28.5 0 130.9 2.6 198.3 99.2zm-234-181.5c31.1-36.9 53.1-88.1 53.1-139.3 0-7.1-.6-14.3-1.9-20.1-50.6 1.9-110.8 33.7-147.1 75.8-28.5 32.4-55.1 83.6-55.1 135.5 0 7.8 1.3 15.6 1.9 18.1 3.2.6 8.4 1.3 13.6 1.3 45.4 0 102.5-30.4 135.5-71.3z" />
@@ -114,7 +114,7 @@ export default function Home() {
               href="https://apps.microsoft.com/store/detail/9NG65VGT41PP"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center px-7 py-4 rounded-full bg-white/10 border border-white/20 text-white font-semibold text-base hover:bg-white/15 transition-all duration-200 backdrop-blur-md shadow-[inset_0_1px_0_rgba(255,255,255,0.15),0_4px_24px_rgba(0,0,0,0.3)]"
+              className="inline-flex items-center justify-center w-full sm:w-auto px-7 py-4 rounded-full bg-white/10 border border-white/20 text-white font-semibold text-base hover:bg-white/15 transition-all duration-200 backdrop-blur-md shadow-[inset_0_1px_0_rgba(255,255,255,0.15),0_4px_24px_rgba(0,0,0,0.3)]"
             >
               <svg className="w-4 h-4 mr-2 flex-shrink-0" viewBox="0 0 88 88" fill="currentColor" aria-hidden="true">
                 <path d="M0 12.402l35.687-4.86.016 34.423-35.67.203zm35.67 33.529l.028 34.453L.028 75.48.026 45.7zm4.326-39.025L87.314 0v41.527l-47.318.376zm47.329 39.349l-.015 41.34-47.318-6.678-.066-34.739z"/>
@@ -455,12 +455,12 @@ export default function Home() {
         {/* Footer */}
         <footer className="relative overflow-hidden">
           {/* Download button */}
-          <div className="flex gap-4 justify-center pt-16 pb-10 relative z-10">
+          <div className="flex flex-col sm:flex-row gap-4 items-center justify-center pt-16 pb-10 relative z-10 px-10 md:px-20">
             <a
               href="https://github.com/Abjcodes/Muffle-releases/releases/download/prod/Muffle1.1.dmg"
               download
               rel="noopener noreferrer"
-              className="inline-flex items-center px-7 py-4 rounded-full bg-white/10 border border-white/20 text-white font-semibold text-base hover:bg-white/15 transition-all duration-200 backdrop-blur-md shadow-[inset_0_1px_0_rgba(255,255,255,0.15),0_4px_24px_rgba(0,0,0,0.3)]"
+              className="inline-flex items-center justify-center w-full sm:w-auto px-7 py-4 rounded-full bg-white/10 border border-white/20 text-white font-semibold text-base hover:bg-white/15 transition-all duration-200 backdrop-blur-md shadow-[inset_0_1px_0_rgba(255,255,255,0.15),0_4px_24px_rgba(0,0,0,0.3)]"
             >
               <svg className="w-4 h-4 mr-2 flex-shrink-0" viewBox="0 0 814 1000" fill="currentColor" aria-hidden="true">
                 <path d="M788.1 340.9c-5.8 4.5-108.2 62.2-108.2 190.5 0 148.4 130.3 200.9 134.2 202.2-.6 3.2-20.7 71.9-68.7 141.9-42.8 61.6-87.5 123.1-155.5 123.1s-85.5-39.5-164-39.5c-76 0-103.7 40.8-165.9 40.8s-105-42.2-150.3-107.4C46.8 790.7 0 663 0 541.8c0-194.3 126.4-297.5 250.8-297.5 66.1 0 121.2 43.4 162.7 43.4 39.5 0 101.1-46 176.3-46 28.5 0 130.9 2.6 198.3 99.2zm-234-181.5c31.1-36.9 53.1-88.1 53.1-139.3 0-7.1-.6-14.3-1.9-20.1-50.6 1.9-110.8 33.7-147.1 75.8-28.5 32.4-55.1 83.6-55.1 135.5 0 7.8 1.3 15.6 1.9 18.1 3.2.6 8.4 1.3 13.6 1.3 45.4 0 102.5-30.4 135.5-71.3z" />
@@ -471,7 +471,7 @@ export default function Home() {
               href="https://apps.microsoft.com/store/detail/9NG65VGT41PP"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center px-7 py-4 rounded-full bg-white/10 border border-white/20 text-white font-semibold text-base hover:bg-white/15 transition-all duration-200 backdrop-blur-md shadow-[inset_0_1px_0_rgba(255,255,255,0.15),0_4px_24px_rgba(0,0,0,0.3)]"
+              className="inline-flex items-center justify-center w-full sm:w-auto px-7 py-4 rounded-full bg-white/10 border border-white/20 text-white font-semibold text-base hover:bg-white/15 transition-all duration-200 backdrop-blur-md shadow-[inset_0_1px_0_rgba(255,255,255,0.15),0_4px_24px_rgba(0,0,0,0.3)]"
             >
               <svg className="w-4 h-4 mr-2 flex-shrink-0" viewBox="0 0 88 88" fill="currentColor" aria-hidden="true">
                 <path d="M0 12.402l35.687-4.86.016 34.423-35.67.203zm35.67 33.529l.028 34.453L.028 75.48.026 45.7zm4.326-39.025L87.314 0v41.527l-47.318.376zm47.329 39.349l-.015 41.34-47.318-6.678-.066-34.739z"/>
