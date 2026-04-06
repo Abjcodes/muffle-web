@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Plus_Jakarta_Sans } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 
 const jakarta = Plus_Jakarta_Sans({
@@ -59,6 +60,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={jakarta.variable}>
+      <head>
+        <Script
+          defer
+          src="https://cloud.umami.is/script.js"
+          data-website-id="28ed1c2a-c7f6-4e41-a89b-6566d92ea96a"
+        />
+      </head>
       <body>{children}</body>
     </html>
   );
