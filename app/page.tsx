@@ -329,6 +329,26 @@ export default function Home() {
               <p className="text-white/50 text-sm">Software Engineer</p>
             </div>
           </div>
+          <div className="w-full text-center">
+            <p className="text-white/80 text-lg leading-relaxed italic mb-6">
+              "I mostly use Muffle during Teams and Google Meet calls. It helps me keep people focused on the window I&rsquo;m presenting instead of everything else happening on my screen. It&rsquo;s lightweight, easy to use, and has become one of those tools that I just keep running in the background every day."
+            </p>
+            <div>
+              <p className="text-white font-semibold">Jacek Godorowski</p>
+              <p className="text-white/50 text-sm">CEO @ Raws.app | Firemind.me</p>
+            </div>
+          </div>
+          <div className="w-full text-center">
+            <p className="text-white/80 text-lg leading-relaxed italic mb-6">
+              "Muffle is simple, stable, and does exactly what it advertises<br />
+              efficiently.<br />
+              We need more software like this these days."
+            </p>
+            <div>
+              <p className="text-white font-semibold">Basil</p>
+              <p className="text-white/50 text-sm">Artist / Software Developer</p>
+            </div>
+          </div>
         </div>
 
         {/* Pricing */}
