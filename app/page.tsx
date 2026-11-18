@@ -63,6 +63,19 @@ export default function Home() {
       />
 
       <div className="min-h-screen bg-[#1a1a1a] text-white font-[family-name:var(--font-jakarta)]">
+        <aside
+          aria-label="Black Friday sale"
+          className="sticky top-0 z-50 border-b border-white/10 bg-[#242424] px-4 py-2.5 text-center text-sm font-semibold leading-6 text-white/80"
+        >
+          <p className="mx-auto max-w-4xl">
+            Black Friday sale — <span className="text-amber-300">50% off</span>{" "}
+            with code{" "}
+            <code className="inline-block select-all whitespace-nowrap rounded-md border border-white/15 bg-white/10 px-2 font-mono text-[0.8125rem] text-white">
+              BLACKFRIDAY26
+            </code>
+          </p>
+        </aside>
+
         <div className="max-w-4xl mx-auto px-10 md:px-20">
         {/* Nav */}
         <nav className="pt-8 mb-0">
