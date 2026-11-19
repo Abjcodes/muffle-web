@@ -513,6 +513,47 @@ export default function Home() {
             </a>
           </div>
 
+          {/* More from the developer */}
+          <section
+            aria-labelledby="more-from-developer"
+            className="mx-auto mb-10 max-w-4xl px-10 md:px-20"
+          >
+            <div className="border-t border-white/10 pt-6">
+              <h2 id="more-from-developer" className="mb-3 text-xs font-medium text-white/60">
+                More from the developer
+              </h2>
+              <a
+                href="https://www.lattix.app"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group -mx-3 flex items-start gap-4 rounded-xl p-3 transition-colors duration-150 hover:bg-white/[0.03] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white/70 sm:items-center"
+              >
+                <Image
+                  src="/lattix.svg"
+                  alt=""
+                  width={44}
+                  height={44}
+                  className="shrink-0 rounded-[10px]"
+                />
+                <div className="flex min-w-0 flex-1 flex-col gap-3 sm:flex-row sm:items-center sm:justify-between sm:gap-6">
+                  <div>
+                    <div className="flex flex-wrap items-center gap-x-2 gap-y-1">
+                      <span className="text-base font-semibold text-white/90">Lattix</span>
+                      <span className="text-xs text-white/60">For macOS</span>
+                    </div>
+                    <p className="mt-1 max-w-sm text-sm leading-relaxed text-white/60">
+                      Launch apps, files, and websites together in your saved layout.
+                    </p>
+                  </div>
+                  <span className="shrink-0 whitespace-nowrap text-sm font-medium text-white/75 transition-colors duration-150 group-hover:text-white">
+                    Explore Lattix <span aria-hidden="true">↗</span>
+                    <span className="sr-only"> (opens in a new tab)</span>
+                  </span>
+                </div>
+              </a>
+            </div>
+          </section>
+
           {/* Social links */}
           <div className="flex justify-center gap-4 pb-6">
             <a href="https://discord.gg/Y79KZwAz" target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-xl bg-white/[0.06] border border-white/[0.08] flex items-center justify-center text-white/30 hover:text-white/60 hover:bg-white/[0.1] transition-all duration-200">
