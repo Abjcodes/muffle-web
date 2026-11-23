@@ -365,7 +365,7 @@ export default function Home() {
         </div>
 
         {/* Pricing */}
-        <div id="pricing" className="mb-24">
+        <div id="pricing">
           <div className="flex justify-center">
 
             {/* Solo card */}
@@ -488,7 +488,7 @@ export default function Home() {
         {/* Footer */}
         <footer className="relative overflow-hidden">
           {/* Download button */}
-          <div className="flex flex-col sm:flex-row gap-4 items-center justify-center pt-16 pb-10 relative z-10 px-10 md:px-20">
+          <div className="flex flex-col sm:flex-row gap-4 items-center justify-center pt-8 sm:pt-12 pb-10 relative z-10 px-10 md:px-20">
             <a
               href="https://github.com/Abjcodes/Muffle-releases/releases/download/prod/Muffle.dmg"
               download
