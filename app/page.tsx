@@ -127,7 +127,7 @@ export default function Home() {
               href="https://apps.microsoft.com/store/detail/9NG65VGT41PP"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center w-full sm:w-auto px-7 py-4 rounded-full bg-white/10 border border-white/20 text-white font-semibold text-base hover:bg-white/15 transition-all duration-200 backdrop-blur-md shadow-[inset_0_1px_0_rgba(255,255,255,0.15),0_4px_24px_rgba(0,0,0,0.3)]"
+              className="hidden items-center justify-center w-full sm:w-auto px-7 py-4 rounded-full bg-white/10 border border-white/20 text-white font-semibold text-base hover:bg-white/15 transition-all duration-200 backdrop-blur-md shadow-[inset_0_1px_0_rgba(255,255,255,0.15),0_4px_24px_rgba(0,0,0,0.3)]"
             >
               <svg className="w-4 h-4 mr-2 flex-shrink-0" viewBox="0 0 88 88" fill="currentColor" aria-hidden="true">
                 <path d="M0 12.402l35.687-4.86.016 34.423-35.67.203zm35.67 33.529l.028 34.453L.028 75.48.026 45.7zm4.326-39.025L87.314 0v41.527l-47.318.376zm47.329 39.349l-.015 41.34-47.318-6.678-.066-34.739z"/>
@@ -504,7 +504,7 @@ export default function Home() {
               href="https://apps.microsoft.com/store/detail/9NG65VGT41PP"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center w-full sm:w-auto px-7 py-4 rounded-full bg-white/10 border border-white/20 text-white font-semibold text-base hover:bg-white/15 transition-all duration-200 backdrop-blur-md shadow-[inset_0_1px_0_rgba(255,255,255,0.15),0_4px_24px_rgba(0,0,0,0.3)]"
+              className="hidden items-center justify-center w-full sm:w-auto px-7 py-4 rounded-full bg-white/10 border border-white/20 text-white font-semibold text-base hover:bg-white/15 transition-all duration-200 backdrop-blur-md shadow-[inset_0_1px_0_rgba(255,255,255,0.15),0_4px_24px_rgba(0,0,0,0.3)]"
             >
               <svg className="w-4 h-4 mr-2 flex-shrink-0" viewBox="0 0 88 88" fill="currentColor" aria-hidden="true">
                 <path d="M0 12.402l35.687-4.86.016 34.423-35.67.203zm35.67 33.529l.028 34.453L.028 75.48.026 45.7zm4.326-39.025L87.314 0v41.527l-47.318.376zm47.329 39.349l-.015 41.34-47.318-6.678-.066-34.739z"/>
