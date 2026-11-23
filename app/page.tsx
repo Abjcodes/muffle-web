@@ -135,7 +135,7 @@ export default function Home() {
               Download for Windows
             </a>
             <span className="text-sm text-white/40">
-              7 day free trial&nbsp;·&nbsp;Supported from MacOS 14.0 & Windows 10
+              7 day free trial&nbsp;·&nbsp;Supported from MacOS 14.0
             </span>
           </div>
         </main>
